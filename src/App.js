@@ -1,12 +1,16 @@
 
 import './App.css';
 
+
 function App() {
   return (
+
+
     <div className="App">
       <div className="header">
         <h1 className="text">CALCULATOR</h1>
       </div>
+      <br/>
       <div className="cal__body">
         <div className="cal__content">
           <div className="format__cal">
@@ -19,6 +23,7 @@ function App() {
               <br />
               <button className="style_button">Sum</button>
 
+
               <div>
                 <hr className="hr__style" />
               </div>
@@ -29,6 +34,7 @@ function App() {
                 <input type="text" placeholder="1523" className="style_input_result" />
               </div>
             </div>
+
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@ body{
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -26,40 +26,73 @@ body{
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
-.App-link {
-  color: #61dafb;
-}
 
 .header{
   background-color: #C10708;
   color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   font-family: sans-serif; 
   font-weight: 200;
-  width: 100vw;
+  width: 40vw;
   height: 10vh;
+}
+@media only screen and (max-device-width: 480px){
+  .header{
+    background-color: #C10708;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif; 
+    font-weight: 200;
+    width: 90vw;
+    height: 10vh;
+}
 }
 .text{
   position: relative;
-  top: 15px;
+  top: 4px;
 }
 .cal__body{
   height: 90vh;
-  width: 100%;
+  width: 40vw;
   box-sizing: border-box;
-  box-shadow: 5px 2px 10px #888888;
-  display: flex;
+  box-shadow: 1px 1px 4px #888888;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   background-color: whitesmoke;
 
 }
+@media only screen and (max-device-width: 480px){
+  .cal__body{
+    height: 90vh;
+  width: 90vw;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 4px #888888;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  }
+}
 .cal__content{
-  margin-top: -90px;
+  margin-top: -6px;
   box-shadow: 2px 1px 6px 2px #ccc;
-  width: 60vw;
-  height: 65vh;
+  width: 37vw;
+  height: 75vh;
+}
+@media only screen and (max-device-width: 480px){
+  .cal__content{
+    margin-top: -6px;
+    box-shadow: 2px 1px 6px 2px #ccc;
+    width: 73vw;
+    height: 75vh;
+  } 
 }
 .format__cal{
   display: block;
@@ -68,6 +101,12 @@ body{
 .inside__font{
   font-size: 16px;
   color:rgba(121, 117, 117, 0.8);
+}
+@media only screen and (max-device-width: 480px){
+  .inside__font{
+    font-size: 18px;
+    color:rgba(121, 117, 117, 0.8);
+  }
 }
 .input_box{
   margin-top: -50px;
@@ -86,6 +125,17 @@ body{
   border-radius: 3px;
   outline: none;
 }
+@media only screen and (max-device-width: 480px){
+  .style_input{
+    width: 40vw;
+  height: 4vh;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  }
+}
 ::placeholder{
   color:rgba(121, 117, 117, 0.8);
   font-size: 14px;
@@ -93,6 +143,16 @@ body{
   font-weight: 400;
   padding: 5px;
 }
+@media only screen and (max-device-width: 480px){
+  ::placeholder{
+    color:rgba(121, 117, 117, 0.8);
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 400;
+    padding: 5px;
+  }
+}
+
 .style_button{
   font-family: sans-serif;
   width: 18vw;
@@ -104,6 +164,19 @@ body{
   font-size: 20px;
   background-color: rgb(204, 71, 71);
 }
+@media only screen and (max-device-width: 480px){
+  .style_button{
+    font-family: sans-serif;
+  width: 40vw;
+  height: 6vh;
+  border: none;
+  margin: 10px;
+  padding: 0px;
+  color: white;
+  font-size: 22px;
+  background-color: #C10708;
+  }  
+}
 .hr__style{
   
   border: 0;
@@ -114,6 +187,18 @@ body{
   
   
 }
+@media only screen and (max-device-width: 480px){
+  .hr__style{
+  
+    border: 0;
+    width:92%;
+    height: 2.5px;
+    background: rgb(204, 71, 71);
+    margin-top: 3rem;
+    
+    
+  }
+}
 .style_input_result{
   width: 17vw;
   height: 4vh;
@@ -122,6 +207,17 @@ body{
   border: 1px solid red;
   border-radius: 3px;
   outline: none;
+}
+@media only screen and (max-device-width: 480px){
+  .style_input_result{
+    width: 40vw;
+    height: 4vh;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid red;
+    border-radius: 3px;
+    outline: none;
+  } 
 }
 @keyframes App-logo-spin {
   from {
